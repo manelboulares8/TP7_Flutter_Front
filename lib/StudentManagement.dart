@@ -284,25 +284,7 @@ class _StudentManagementState extends State<StudentManagement> {
                           });
                         },
                       ),
-                      SizedBox(height: 10),
-                      _formations.isEmpty
-                          ? CircularProgressIndicator()
-                          : DropdownButton<Formation>(
-                              value: _selectedFormation,
-                              isExpanded: true,
-                              hint: Text('Sélectionner une formation'),
-                              items: _formations.map((formation) {
-                                return DropdownMenuItem<Formation>(
-                                  value: formation,
-                                  child: Text(formation.nom),
-                                );
-                              }).toList(),
-                              onChanged: (newFormation) {
-                                setStateDialog(() {
-                                  _selectedFormation = newFormation;
-                                });
-                              },
-                            ),
+                     
                     ],
                   ),
                 ),

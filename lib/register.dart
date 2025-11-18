@@ -50,11 +50,11 @@ class _RegisterState extends State<Register> {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
             content: Text(
-              'Could not register with these credentials!',
+              'Compte créé avec succés !',
               style: TextStyle(fontSize: 16.0),
             ),
             duration: Duration(seconds: 5),
-            backgroundColor: Colors.red,
+            backgroundColor: Color.fromARGB(255, 58, 185, 130),
           ),
         );
       }
